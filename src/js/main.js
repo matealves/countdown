@@ -1,4 +1,4 @@
-import Countdown from "./countdown.js";
+import Countdown from "./Countdown.js";
 
 const date = "31 Dec 2023 23:59:59 GMT-0300";
 
