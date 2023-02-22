@@ -45,6 +45,7 @@ function updateInterval() {
 
   initTimer(date);
   interval = setInterval(initTimer, 1000, date);
+  inputDate.blur();
 }
 
 inputDate.addEventListener("input", updateInterval);
