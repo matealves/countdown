@@ -15,9 +15,11 @@ function addDays(date, days) {
 }
 const newDate = addDays(actualDate, 7);
 
-let date = newDate.toISOString().slice(0, 10);
-inputDate.setAttribute("min", date);
-inputDate.value = date;
+let date = newDate.toISOString().slice(0, 10) + "T02:59:59Z";
+const cleanDate = newDate.toISOString().slice(0, 10);
+
+inputDate.setAttribute("min", cleanDate);
+inputDate.value = cleanDate;
 
 function initTimer(date) {
   const validity = new Countdown(date);
