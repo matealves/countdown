@@ -40,7 +40,7 @@ let interval = setInterval(initTimer, 1000, date);
 
 function updateInterval() {
   clearInterval(interval);
-  date = inputDate.value;
+  date = new Date(inputDate.value).toISOString().slice(0, 10) + "T02:59:59Z";
   console.log(date);
 
   initTimer(date);
